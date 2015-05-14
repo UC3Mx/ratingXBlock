@@ -71,7 +71,7 @@ in ``edx-platform/cms/djangoapps/contentstore/views/component.py``.
 
 .Add a ratingvideo policy key on the advanced_modules keys
 
-![Settings->Advanced Settings](https://appedx.uc3m.es/images/p1.jpg)
+![Settings->Advanced Settings](https://appedx.uc3m.es/images/p1.png)
 
 .After that, a new button called Advanced will appear in your unit edit view
 
@@ -79,7 +79,7 @@ in ``edx-platform/cms/djangoapps/contentstore/views/component.py``.
 
 .And a new option called ratingVideo. Which will add the component with the rating element to the course.
 
-![Advanced](https://appedx.uc3m.es/images/p2.jpg)
+![Advanced](https://appedx.uc3m.es/images/p2.png)
 
 .You can change the parameters of the ratingvideo xblock pressing the edit button. You can configure if you want to show the number of votes and the total score
 
