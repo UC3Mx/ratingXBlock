@@ -1,0 +1,38 @@
+<div class="wrapper-comp-settings is-active editor-with-buttons " id="settings-tab">
+  <ul class="list-input settings-list">
+      <li class="field comp-setting-entry is-set">
+            <div class="wrapper-videolist-url videolist-settings-item">
+                <label class="label setting-label">Id Youtube Video</label>
+                <input class="input setting-input edit-display-name" id="edit_idvideo" value="{self.idvideo}" type="text">
+                <span class="tip setting-help">The Youtube id of the video to rate</span>
+                <p></p>
+                <label class="label setting-label">Show rating</label>
+                <select class="select setting-input edit-display-name" id="edit_showrating" value="{self.showrating}">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <span class="tip setting-help">Show actual rating to students</span>
+                <p></p>
+                <label class="label setting-label">Show votes</label>
+                <select class="select setting-input edit-display-name" id="edit_showvotes" value="{self.showvotes}">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <span class="tip setting-help">Show number of votes to students</span>
+                <input class="input setting-input edit-display-name" id="value_showrating" value="{self.showrating}" type="text" style="display:none;">
+                <input class="input setting-input edit-display-name" id="value_showvotes" value="{self.showvotes}" type="text" style="display:none;">
+            </div>
+      </li>
+  </ul>
+    <div class="xblock-actions">
+        <span class="xblock-editor-error-message"></span>
+        <ul>
+            <li class="action-item">
+                <a href="#" class="save-button action-primary action">Save</a>
+            </li>
+            <li class="action-item">
+                <a href="#" class="button cancel-button">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>

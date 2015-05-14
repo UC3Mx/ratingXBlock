@@ -1,0 +1,1 @@
+from .ratingvideo import ratingXBlock

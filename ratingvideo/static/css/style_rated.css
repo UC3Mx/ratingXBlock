@@ -1,0 +1,19 @@
+    .ec-stars-wrapper {
+        font-size:0;        
+        display:inline-block;
+    }
+    .ec-stars-wrapper a {
+        text-decoration:none;
+        display:inline-block;       
+        font-size:64px;
+        font-size:4rem;       
+        color:#888;
+    }
+
+    .ec-starsselected-wrapper a {
+        text-decoration:none;
+        display:inline-block;       
+        font-size:64px;
+        font-size:4rem;       
+        color:rgb(39, 130, 228);
+    }
