@@ -63,7 +63,7 @@ function ratingvideouserXBlock(runtime, element) {
     $(element).find('.erase-button').bind('click', function(e) {
     	e.preventDefault();
     	$(userscore).context.value = 0;
-    	$(usercomment).context.value = 'Place your comment here';
+    	$(usercomment).context.value = 'Introduce tu comentario aqu&iacute;';
     	html = '<div class="ec-stars-wrapper" style="float:left;">';
     	for(j=1;j<=5;j++)
         {
@@ -88,7 +88,7 @@ function ratingvideouserXBlock(runtime, element) {
         $.post(handlerUrl, JSON.stringify(data)).done(function(response) {
             if (response.result === 'success') {
                 window.location.reload(false);
-                alert('Your vote and comment was sucefully sended');
+                alert('Tu voto se ha registrado correctamente');
             } else {
                 alert('Error: '+response.result);
             }

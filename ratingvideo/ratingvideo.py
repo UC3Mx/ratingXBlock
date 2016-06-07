@@ -29,25 +29,25 @@ class ratingXBlock(XBlock):
     # self.<fieldname>.
 
     idvideo = String(display_name="idvideo",
-                  default="enter Youtube id",
+                  default="Introduce el id de Youtube",
                   scope=Scope.content,
-                  help="Youtube id video for rating")
+                  help="Youtube id del video a puntuar")
     showrating = String(display_name="showrating",
                   default="yes",
                   scope=Scope.content,
-                  help="Define if rating is showed to students")
+                  help="Define si la puntuacion se muestra a los alumnos")
     showvotes = String(display_name="showvotes",
                   default="yes",
                   scope=Scope.content,
-                  help="Define if votes are showed to students")
+                  help="Define si los votos son mostrados a los alumnos")
     submissions_count = Integer(
-        default=0, help="Number of times the user has sent a submission.", scope=Scope.user_state
+        default=0, help="Numero de veces que el usuario ha mandado una valoracion.", scope=Scope.user_state
     )
     userscore = String(
-        default="0", help="Number of times the user has sent a submission.", scope=Scope.user_state
+        default="0", help="Puntuacion otorgada al video por el alumno.", scope=Scope.user_state
     )
     usercomment = String(
-        default="Place your comment here", help="Number of times the user has sent a submission.", scope=Scope.user_state
+        default="Pon tu comentario aqui", help="Campo para introducir un comentario sobre el video.", scope=Scope.user_state
     )
     ip = ""
     login = ""
@@ -83,7 +83,7 @@ class ratingXBlock(XBlock):
         return self.xmodule_runtime.anonymous_student_id
 
     def get_totalscore(self):
-        if(self.idvideo == 'enter Youtube id'):
+        if(self.idvideo == 'Introduce el id de Youtube'):
             return '--'
         else:
             score = 0
@@ -106,7 +106,7 @@ class ratingXBlock(XBlock):
                 return scorestr
 
     def get_totalvotes(self):
-        if(self.idvideo == 'enter Youtube id'):
+        if(self.idvideo == 'Introduce el id de Youtube'):
             return '--'
         else:
             votes = 0
@@ -152,9 +152,9 @@ class ratingXBlock(XBlock):
         #assert data['hello'] == 'world'
 
         #Check if id is correct formatted
-        if(self.idvideo == 'enter Youtube id'):
+        if(self.idvideo == 'Introduce el id de Youtube'):
             return {
-                'result':'You must set Id video',
+                'result':'Debes establecer un id de Youtube',
             }
         else:
             self.submissions_count += 1

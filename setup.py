@@ -17,7 +17,7 @@ def package_data(pkg, root):
 setup(
     name='ratingvideo-xblock',
     version='1.2',
-    description='XBlock wich shows a rating method for video',
+    description='XBlock que permite puntuar un vídeo en edX',
     packages=[
         'ratingvideo',
     ],
